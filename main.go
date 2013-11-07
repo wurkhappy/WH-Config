@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"strings"
 )
 
 var UserService string
@@ -26,29 +27,36 @@ type Configuration struct {
 }
 
 func Prod() {
-	absPath, _ := filepath.Abs("../WH-Config/config.json")
-	log.Print("production config")
-	_, err := os.Open(absPath)
+	absPath, _ := filepath.Abs(".")
+	directories := strings.Split(absPath, "/")
+	file, err := os.Open("/" + directories[1] + "/" + directories[2] + "/WH-Config/config.json")
 	if err != nil {
 		log.Printf("path err %s", err.Error())
 	}
 
-	// decoder := json.NewDecoder(file)
-	// var configuration *Configuration
-	// err = decoder.Decode(&configuration)
-	// if err != nil {
-	// 	log.Print(err)
-	// }
-	// setGlobalVars(configuration)
-	// log.Print(configuration)
+	decoder := json.NewDecoder(file)
+	var configuration *Configuration
+	err = decoder.Decode(&configuration)
+	if err != nil {
+		log.Print(err)
+	}
+	setGlobalVars(configuration)
 }
 
 func Test() {
-	log.Print("test config")
-	file, _ := os.Open("test_config.json")
+	absPath, _ := filepath.Abs(".")
+	directories := strings.Split(absPath, "/")
+	file, err := os.Open("/" + directories[1] + "/" + directories[2] + "/WH-Config/test_config.json")
+	if err != nil {
+		log.Printf("path err %s", err.Error())
+	}
+
 	decoder := json.NewDecoder(file)
-	configuration := &Configuration{}
-	decoder.Decode(&configuration)
+	var configuration *Configuration
+	err = decoder.Decode(&configuration)
+	if err != nil {
+		log.Print(err)
+	}
 	setGlobalVars(configuration)
 }
 
