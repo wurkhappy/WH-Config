@@ -1,0 +1,9 @@
+{
+	"UserService": "http://localhost:3000",
+	"PaymentInfoService": "http://localhost:3120",
+	"AgreementsService": "http://localhost:4050",
+	"CommentsService": "http://localhost:5050",
+	"EmailExchange": "test",
+	"EmailQueue": "test",
+	"EmailURI": "amqp://guest:guest@localhost:5672/"
+}
