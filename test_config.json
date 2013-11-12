@@ -6,5 +6,6 @@
 	"EmailExchange": "test",
 	"EmailQueue": "test",
 	"EmailURI": "amqp://guest:guest@localhost:5672/",
-	"BalancedUserName": "ak-test-x9PqPQUtpvUtnXsZqBL4rXGAE8WvvqoJ"
+	"BalancedUserName": "ak-test-x9PqPQUtpvUtnXsZqBL4rXGAE8WvvqoJ",
+	"WebServer": "http://localhost:4000"
 }

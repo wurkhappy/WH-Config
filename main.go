@@ -16,6 +16,7 @@ var EmailExchange string
 var EmailQueue string
 var EmailURI string
 var BalancedUsername string
+var WebServer string
 
 type Configuration struct {
 	UserService        string
@@ -26,6 +27,7 @@ type Configuration struct {
 	EmailQueue         string
 	EmailURI           string
 	BalancedUsername   string
+	WebServer   string
 }
 
 func Prod() {
@@ -71,4 +73,5 @@ func setGlobalVars(configuration *Configuration) {
 	EmailQueue = configuration.EmailQueue
 	EmailURI = configuration.EmailURI
 	BalancedUsername = configuration.BalancedUsername
+	WebServer = configuration.WebServer
 }
