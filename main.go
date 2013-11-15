@@ -74,7 +74,6 @@ func Test() {
 		log.Print(err)
 	}
 	setGlobalVars(configuration)
-	log.Printf("rmq broker is : %s", configuration.RMQBroker)
 }
 
 func setGlobalVars(configuration *Configuration) {
