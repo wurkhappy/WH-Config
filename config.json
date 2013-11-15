@@ -5,7 +5,7 @@
 	"CommentsService": "http://localhost:5050",
 	"EmailExchange": "email",
 	"EmailQueue": "email",
-	"EmailURI": "amqp://guest:guest@localhost:5672/",
+	"EmailBroker": "amqp://guest:guest@localhost:5672/",
 	"BalancedUserName": "ak-test-x9PqPQUtpvUtnXsZqBL4rXGAE8WvvqoJ",
 	"WebServer": "http://li241-77.members.linode.com"
 }

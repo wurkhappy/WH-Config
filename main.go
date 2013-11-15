@@ -14,22 +14,32 @@ var AgreementsService string
 var CommentsService string
 var EmailExchange string
 var EmailQueue string
-var EmailURI string
+var EmailBroker string
 var BalancedUsername string
 var WebServer string
 var MDPBroker string
+var RMQBroker string
+var WebAppRedis string
+var TransactionsBroker string
+var TransactionsQueue string
+var TransactionsExchange string
 
 type Configuration struct {
-	UserService        string
-	PaymentInfoService string
-	AgreementsService  string
-	CommentsService    string
-	EmailExchange      string
-	EmailQueue         string
-	EmailURI           string
-	BalancedUsername   string
-	WebServer          string
-	MDPBroker          string
+	UserService          string
+	PaymentInfoService   string
+	AgreementsService    string
+	CommentsService      string
+	EmailExchange        string
+	EmailQueue           string
+	EmailBroker          string
+	BalancedUsername     string
+	WebServer            string
+	MDPBroker            string
+	RMQBroker            string
+	WebAppRedis          string
+	TransactionsBroker   string
+	TransactionsQueue    string
+	TransactionsExchange string
 }
 
 func Prod() {
@@ -64,6 +74,7 @@ func Test() {
 		log.Print(err)
 	}
 	setGlobalVars(configuration)
+	log.Printf("rmq broker is : %s", configuration.RMQBroker)
 }
 
 func setGlobalVars(configuration *Configuration) {
@@ -73,8 +84,13 @@ func setGlobalVars(configuration *Configuration) {
 	CommentsService = configuration.CommentsService
 	EmailExchange = configuration.EmailExchange
 	EmailQueue = configuration.EmailQueue
-	EmailURI = configuration.EmailURI
+	EmailBroker = configuration.EmailBroker
 	BalancedUsername = configuration.BalancedUsername
 	WebServer = configuration.WebServer
 	MDPBroker = configuration.MDPBroker
+	RMQBroker = configuration.RMQBroker
+	WebAppRedis = configuration.WebAppRedis
+	TransactionsBroker = configuration.TransactionsBroker
+	TransactionsQueue = configuration.TransactionsQueue
+	TransactionsExchange = configuration.TransactionsExchange
 }
