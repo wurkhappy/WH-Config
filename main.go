@@ -17,6 +17,7 @@ var EmailQueue string
 var EmailURI string
 var BalancedUsername string
 var WebServer string
+var MDPBroker string
 
 type Configuration struct {
 	UserService        string
@@ -27,7 +28,8 @@ type Configuration struct {
 	EmailQueue         string
 	EmailURI           string
 	BalancedUsername   string
-	WebServer   string
+	WebServer          string
+	MDPBroker          string
 }
 
 func Prod() {
@@ -74,4 +76,5 @@ func setGlobalVars(configuration *Configuration) {
 	EmailURI = configuration.EmailURI
 	BalancedUsername = configuration.BalancedUsername
 	WebServer = configuration.WebServer
+	MDPBroker = configuration.MDPBroker
 }

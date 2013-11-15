@@ -1,11 +1,12 @@
 {
-	"UserService": "http://localhost:3000",
-	"PaymentInfoService": "http://localhost:3120",
-	"AgreementsService": "http://localhost:4050",
-	"CommentsService": "http://localhost:5050",
+	"UserService": "UserService",
+	"PaymentInfoService": "PaymentInfo",
+	"AgreementsService": "Agreements",
+	"CommentsService": "Comments",
 	"EmailExchange": "test",
 	"EmailQueue": "test",
 	"EmailURI": "amqp://guest:guest@localhost:5672/",
 	"BalancedUserName": "ak-test-x9PqPQUtpvUtnXsZqBL4rXGAE8WvvqoJ",
-	"WebServer": "http://localhost:4000"
+	"WebServer": "http://localhost:4000",
+	"MDPBroker": "tcp://23.239.9.64:5555"
 }
