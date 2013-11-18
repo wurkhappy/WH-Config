@@ -5,13 +5,13 @@
 	"CommentsService": "Comments",
 	"EmailExchange": "testEmail",
 	"EmailQueue": "testEmail",
-	"EmailBroker": "amqp://guest:guest@23.239.9.64:5672/",
+	"EmailBroker": "amqp://guest:guest@localhost:5672/",
 	"BalancedUserName": "ak-test-x9PqPQUtpvUtnXsZqBL4rXGAE8WvvqoJ",
 	"WebServer": "http://localhost:4000",
-	"MDPBroker": "tcp://23.239.9.64:5555",
-	"RMQBroker": "amqp://guest:guest@23.239.9.64:5672/",
-	"WebAppRedis": "23.239.9.64:6379",
-	"TransactionsBroker": "amqp://guest:guest@23.239.9.64:5672/",
+	"MDPBroker": "tcp://localhost:5555",
+	"RMQBroker": "amqp://guest:guest@localhost:5672/",
+	"WebAppRedis": "localhost:6379",
+	"TransactionsBroker": "amqp://guest:guest@localhost:5672/",
 	"TransactionsQueue": "testTransaction",
 	"TransactionsExchange": "testTransaction"
 }
