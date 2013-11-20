@@ -43,9 +43,7 @@ type Configuration struct {
 }
 
 func Prod() {
-	absPath, _ := filepath.Abs(".")
-	directories := strings.Split(absPath, "/")
-	file, err := os.Open("/" + directories[1] + "/" + directories[2] + "/WH-Config/config.json")
+	file, err := os.Open("/root/go//WH-Config/config.json")
 	if err != nil {
 		log.Printf("path err %s", err.Error())
 	}
