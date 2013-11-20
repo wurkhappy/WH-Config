@@ -1,11 +1,17 @@
 {
-	"UserService": "http://localhost:3000",
-	"PaymentInfoService": "http://localhost:3120",
-	"AgreementsService": "http://localhost:4050",
-	"CommentsService": "http://localhost:5050",
+	"UserService": "UserService",
+	"PaymentInfoService": "PaymentInfo",
+	"AgreementsService": "Agreements",
+	"CommentsService": "Comments",
 	"EmailExchange": "email",
 	"EmailQueue": "email",
-	"EmailBroker": "amqp://guest:guest@localhost:5672/",
+	"EmailBroker": "amqp://guest:guest@192.168.139.151:5672/",
 	"BalancedUserName": "ak-test-x9PqPQUtpvUtnXsZqBL4rXGAE8WvvqoJ",
-	"WebServer": "http://li241-77.members.linode.com"
+	"WebServer": "http://192.168.139.694:4000",
+	"MDPBroker": "tcp://192.168.139.151:5555",
+	"RMQBroker": "amqp://guest:guest@192.168.139.151:5672/",
+	"WebAppRedis": "192.168.139.69:6379",
+	"TransactionsBroker": "amqp://guest:guest@192.168.139.151:5672/",
+	"TransactionsQueue": "transaction",
+	"TransactionsExchange": "transaction"
 }
