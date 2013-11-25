@@ -10,7 +10,7 @@
 	"WebServer": "https://li241-77.members.linode.com",
 	"MDPBroker": "tcp://192.168.139.151:5555",
 	"RMQBroker": "amqp://guest:guest@localhost:5672/",
-	"WebAppRedis": ":6379",
+	"WebAppRedis": "localhost:6379",
 	"TransactionsBroker": "amqp://guest:guest@192.168.139.151:5672/",
 	"TransactionsQueue": "transaction",
 	"TransactionsExchange": "transaction"
