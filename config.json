@@ -7,7 +7,7 @@
 	"EmailQueue": "email",
 	"EmailBroker": "amqp://guest:guest@192.168.139.151:5672/",
 	"BalancedUserName": "ak-test-x9PqPQUtpvUtnXsZqBL4rXGAE8WvvqoJ",
-	"WebServer": "http://192.168.139.694:4000",
+	"WebServer": "https://li241-77.members.linode.com",
 	"MDPBroker": "tcp://192.168.139.151:5555",
 	"RMQBroker": "amqp://guest:guest@localhost:5672/",
 	"WebAppRedis": ":6379",
