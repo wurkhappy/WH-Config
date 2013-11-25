@@ -9,7 +9,7 @@
 	"BalancedUserName": "ak-test-x9PqPQUtpvUtnXsZqBL4rXGAE8WvvqoJ",
 	"WebServer": "http://192.168.139.694:4000",
 	"MDPBroker": "tcp://192.168.139.151:5555",
-	"RMQBroker": "amqp://guest:guest@192.168.139.151:5672/",
+	"RMQBroker": "amqp://guest:guest@localhost:5672/",
 	"WebAppRedis": "192.168.139.69:6379",
 	"TransactionsBroker": "amqp://guest:guest@192.168.139.151:5672/",
 	"TransactionsQueue": "transaction",
