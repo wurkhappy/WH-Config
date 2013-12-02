@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS comment;
 DROP TABLE IF EXISTS status;
 DROP TABLE IF EXISTS balanced_user;
 DROP TABLE IF EXISTS transaction;
+DROP TABLE IF EXISTS tag;
 
 CREATE TABLE wh_user (
     id uuid PRIMARY KEY,
@@ -32,6 +33,11 @@ CREATE TABLE balanced_user (
 );
 
 CREATE TABLE transaction (
+    id uuid PRIMARY KEY,
+    data json
+);
+
+CREATE TABLE tag (
     id uuid PRIMARY KEY,
     data json
 );
