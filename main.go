@@ -23,6 +23,7 @@ var WebAppRedis string
 var TransactionsBroker string
 var TransactionsQueue string
 var TransactionsExchange string
+var PDFService string
 
 type Configuration struct {
 	UserService          string
@@ -40,6 +41,7 @@ type Configuration struct {
 	TransactionsBroker   string
 	TransactionsQueue    string
 	TransactionsExchange string
+	PDFService           string
 }
 
 func Prod() {
@@ -90,4 +92,5 @@ func setGlobalVars(configuration *Configuration) {
 	TransactionsBroker = configuration.TransactionsBroker
 	TransactionsQueue = configuration.TransactionsQueue
 	TransactionsExchange = configuration.TransactionsExchange
+	PDFService = configuration.PDFService
 }

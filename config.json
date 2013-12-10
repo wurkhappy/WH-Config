@@ -13,5 +13,6 @@
 	"WebAppRedis": "localhost:6379",
 	"TransactionsBroker": "amqp://guest:guest@192.168.139.151:5672/",
 	"TransactionsQueue": "transaction",
-	"TransactionsExchange": "transaction"
+	"TransactionsExchange": "transaction",
+	"PDFService": "PDFService"
 }
