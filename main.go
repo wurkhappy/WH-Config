@@ -45,7 +45,7 @@ type Configuration struct {
 }
 
 func Prod() {
-	file, err := os.Open("/home/wh//WH-Config/config.json")
+	file, err := os.Open("/home/wh/WH-Config/config.json")
 	if err != nil {
 		log.Printf("path err %s", err.Error())
 	}
