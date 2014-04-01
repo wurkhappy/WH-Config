@@ -11,6 +11,7 @@ import (
 var UserService string
 var PaymentInfoService string
 var AgreementsService string
+var PaymentsService string
 var CommentsService string
 var EmailExchange string
 var EmailQueue string
@@ -80,6 +81,7 @@ func setGlobalVars(configuration *Configuration) {
 	UserService = configuration.UserService
 	PaymentInfoService = configuration.PaymentInfoService
 	AgreementsService = configuration.AgreementsService
+	PaymentsService = configuration.PaymentsService
 	CommentsService = configuration.CommentsService
 	EmailExchange = configuration.EmailExchange
 	EmailQueue = configuration.EmailQueue
