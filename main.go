@@ -25,11 +25,13 @@ var TransactionsBroker string
 var TransactionsQueue string
 var TransactionsExchange string
 var PDFService string
+var TasksService string
 
 type Configuration struct {
 	UserService          string
 	PaymentInfoService   string
 	AgreementsService    string
+	PaymentsService      string
 	CommentsService      string
 	EmailExchange        string
 	EmailQueue           string
@@ -43,6 +45,7 @@ type Configuration struct {
 	TransactionsQueue    string
 	TransactionsExchange string
 	PDFService           string
+	TasksService         string
 }
 
 func Prod() {
@@ -95,4 +98,5 @@ func setGlobalVars(configuration *Configuration) {
 	TransactionsQueue = configuration.TransactionsQueue
 	TransactionsExchange = configuration.TransactionsExchange
 	PDFService = configuration.PDFService
+	TasksService = configuration.TasksService
 }

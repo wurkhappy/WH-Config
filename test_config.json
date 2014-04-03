@@ -15,5 +15,6 @@
     "TransactionsBroker": "amqp://guest:guest@localhost:5672/",
     "TransactionsQueue": "testTransaction",
     "TransactionsExchange": "testTransaction",
-    "PDFService": "PDFService"
+    "PDFService": "PDFService",
+    "TasksService": "Tasks"
 }
