@@ -13,39 +13,33 @@ var PaymentInfoService string
 var AgreementsService string
 var PaymentsService string
 var CommentsService string
-var EmailExchange string
 var EmailQueue string
-var EmailBroker string
 var BalancedUsername string
 var WebServer string
 var MDPBroker string
 var RMQBroker string
 var WebAppRedis string
-var TransactionsBroker string
 var TransactionsQueue string
-var TransactionsExchange string
 var PDFService string
 var TasksService string
+var MainExchange string
 
 type Configuration struct {
-	UserService          string
-	PaymentInfoService   string
-	AgreementsService    string
-	PaymentsService      string
-	CommentsService      string
-	EmailExchange        string
-	EmailQueue           string
-	EmailBroker          string
-	BalancedUsername     string
-	WebServer            string
-	MDPBroker            string
-	RMQBroker            string
-	WebAppRedis          string
-	TransactionsBroker   string
-	TransactionsQueue    string
-	TransactionsExchange string
-	PDFService           string
-	TasksService         string
+	UserService        string
+	PaymentInfoService string
+	AgreementsService  string
+	PaymentsService    string
+	CommentsService    string
+	EmailQueue         string
+	BalancedUsername   string
+	WebServer          string
+	MDPBroker          string
+	RMQBroker          string
+	WebAppRedis        string
+	TransactionsQueue  string
+	PDFService         string
+	TasksService       string
+	MainExchange       string
 }
 
 func Prod() {
@@ -86,17 +80,14 @@ func setGlobalVars(configuration *Configuration) {
 	AgreementsService = configuration.AgreementsService
 	PaymentsService = configuration.PaymentsService
 	CommentsService = configuration.CommentsService
-	EmailExchange = configuration.EmailExchange
 	EmailQueue = configuration.EmailQueue
-	EmailBroker = configuration.EmailBroker
 	BalancedUsername = configuration.BalancedUsername
 	WebServer = configuration.WebServer
 	MDPBroker = configuration.MDPBroker
 	RMQBroker = configuration.RMQBroker
 	WebAppRedis = configuration.WebAppRedis
-	TransactionsBroker = configuration.TransactionsBroker
 	TransactionsQueue = configuration.TransactionsQueue
-	TransactionsExchange = configuration.TransactionsExchange
 	PDFService = configuration.PDFService
 	TasksService = configuration.TasksService
+	MainExchange = configuration.MainExchange
 }
