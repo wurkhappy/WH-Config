@@ -5,7 +5,7 @@
     "PaymentsService": "Payments",
     "CommentsService": "Comments",
     "EmailQueue": "testEmail",
-    "BalancedUserName": "ak-test-x9PqPQUtpvUtnXsZqBL4rXGAE8WvvqoJ",
+    "BalancedUsername": "ak-test-x9PqPQUtpvUtnXsZqBL4rXGAE8WvvqoJ",
     "WebServer": "http://localhost:4000",
     "MDPBroker": "tcp://localhost:5555",
     "RMQBroker": "amqp://guest:guest@localhost:5672/",

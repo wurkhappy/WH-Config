@@ -5,7 +5,7 @@
     "PaymentsService": "Payments",
     "CommentsService": "Comments",
     "EmailQueue": "email",
-    "BalancedUserName": "3cca6e341cbe11e3b892026ba7d31e6f",
+    "BalancedUsername": "3cca6e341cbe11e3b892026ba7d31e6f",
     "WebServer": "https://wurkhappy.com",
     "MDPBroker": "tcp://192.168.139.151:5555",
     "RMQBroker": "amqp://guest:guest@localhost:5672/",
@@ -15,4 +15,4 @@
     "TasksService": "Tasks",
     "MainExchange": "MainExchange",
     "DeadLetterExchange": "DeadLetterExchange"
-    }
+}
