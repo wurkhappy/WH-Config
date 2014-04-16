@@ -24,24 +24,26 @@ var PDFService string
 var TasksService string
 var MainExchange string
 var DeadLetterExchange string
+var PDFTemplatesService string
 
 type Configuration struct {
-	UserService        string
-	PaymentInfoService string
-	AgreementsService  string
-	PaymentsService    string
-	CommentsService    string
-	EmailQueue         string
-	BalancedUsername   string
-	WebServer          string
-	MDPBroker          string
-	RMQBroker          string
-	WebAppRedis        string
-	TransactionsQueue  string
-	PDFService         string
-	TasksService       string
-	MainExchange       string
-	DeadLetterExchange string
+	UserService         string
+	PaymentInfoService  string
+	AgreementsService   string
+	PaymentsService     string
+	CommentsService     string
+	EmailQueue          string
+	BalancedUsername    string
+	WebServer           string
+	MDPBroker           string
+	RMQBroker           string
+	WebAppRedis         string
+	TransactionsQueue   string
+	PDFService          string
+	TasksService        string
+	MainExchange        string
+	DeadLetterExchange  string
+	PDFTemplatesService string
 }
 
 func Prod() {
@@ -93,4 +95,5 @@ func setGlobalVars(configuration *Configuration) {
 	TasksService = configuration.TasksService
 	MainExchange = configuration.MainExchange
 	DeadLetterExchange = configuration.DeadLetterExchange
+	PDFTemplatesService = configuration.PDFTemplatesService
 }

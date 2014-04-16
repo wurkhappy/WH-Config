@@ -14,5 +14,6 @@
     "PDFService": "PDFService",
     "TasksService": "Tasks",
     "MainExchange": "MainExchange",
-    "DeadLetterExchange": "DeadLetterExchange"
+    "DeadLetterExchange": "DeadLetterExchange",
+    "PDFTemplatesService": "PDFTemplatesService"
 }
